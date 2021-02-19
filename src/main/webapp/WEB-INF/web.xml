@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+    http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	version="3.0">
+
+	<display-name>FoodOrderApp</display-name>
+
+	<servlet>
+		<servlet-name>jerseyServlet</servlet-name>
+		<servlet-class>com.sun.jersey.spi.container.servlet.ServletContainer</servlet-class>
+		<init-param>
+			<param-name>com.sun.jersey.config.property.packages</param-name>
+			<param-value>org.trang.test</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet>
+		<display-name>LoginServlet</display-name>
+		<servlet-name>LoginServlet</servlet-name>
+		<servlet-class>org.trang.test.servlet.LoginServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<display-name>CustomerServlet</display-name>
+		<servlet-name>CustomerServlet</servlet-name>
+		<servlet-class>org.trang.test.servlet.CustomerServlet</servlet-class>
+	</servlet>
+
+
+	<servlet>
+		<display-name>registerServlet</display-name>
+		<servlet-name>registerServlet</servlet-name>
+		<servlet-class>org.trang.test.servlet.registerServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+    	</description>
+		<display-name>ControllerFood</display-name>
+		<servlet-name>ControllerFood</servlet-name>
+		<servlet-class>org.trang.test.servlet.ControllerFood</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+    	</description>
+		<display-name>UserServlet</display-name>
+		<servlet-name>UserServlet</servlet-name>
+		<servlet-class>org.trang.test.servlet.UserServlet</servlet-class>
+	</servlet>
+
+
+
+
+
+	<servlet-mapping>
+		<servlet-name>jerseyServlet</servlet-name>
+		<url-pattern>/rest/*</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>LoginServlet</servlet-name>
+		<url-pattern>/LoginServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>CustomerServlet</servlet-name>
+		<url-pattern>/CustomerServlet</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet-mapping>
+		<servlet-name>registerServlet</servlet-name>
+		<url-pattern>/registerServlet</url-pattern>
+	</servlet-mapping>
+	  <servlet-mapping>
+		<servlet-name>ControllerFood</servlet-name>
+		<url-pattern>/listFood</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ControllerFood</servlet-name>
+		<url-pattern>/createFood</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ControllerFood</servlet-name>
+		<url-pattern>/deleteFood</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ControllerFood</servlet-name>
+		<url-pattern>/editFood</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ControllerFood</servlet-name>
+		<url-pattern>/updateFood</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ControllerFood</servlet-name>
+		<url-pattern>/newFood</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>UserServlet</servlet-name>
+		<url-pattern>/listUser</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>UserServlet</servlet-name>
+		<url-pattern>/editUser</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>UserServlet</servlet-name>
+		<url-pattern>/activeUser</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>UserServlet</servlet-name>
+		<url-pattern>/updateUser</url-pattern>
+	</servlet-mapping>
+	
+	
+
+
+
+</web-app>

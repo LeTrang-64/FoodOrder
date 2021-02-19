@@ -1,0 +1,52 @@
+body{
+	background: url('bg_4.jpg');
+	height:100vh;
+	width:100%
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container{
+	position: relative;
+	top:15vh;
+	padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    text-align:center;
+    
+
+}
+.content h1{
+	font-family:"Great Vibes", cursive; 
+	font-size: 100px;
+	color:#c8a97e ;
+}
+.content a{
+	text-decoration: none;
+}
+.btn-solid, .btn-solid-dark {
+    letter-spacing: 1px;
+    display: inline-block;
+    background: #20222b;
+    color: #fff;
+    border: 1px solid #ccc;
+    font-weight: 600;
+    font-size: 15px;
+    text-align: left;
+    padding: 1.2em 3.9em;
+    margin-bottom: 5px;
+    width: 400px;
+     
+}
+.round{
+	border-radius: 35px;
+}
+
+a:hover{
+	background: #8080c0;
+	color: #fff;
+	
+}
